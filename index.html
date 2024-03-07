@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component || Frontend Mentor</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="popUp" id="popUpThanks">
+        <div class="close" id="closeIcon">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            style="fill: rgb(255, 255, 255);"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            ></path>
+          </svg>
+        </div>
+     
+        <div class="popUpIcon">
+     
+          <img src="CSS/images/illustration-thank-you.svg" alt="" />
+        </div>
+
+        <div class="popUpGreeting">
+          <h2 class="greeting">You've selected <span id="rateRange">0</span> out of 5</h2>
+        </div>
+        <div class="thankyouContent">
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more suuport, dont't hestitate to get in touch!
+          </p>
+        </div>
+      </div>
+
+      <div class="rating-card" id="rateCard">
+        <div class="starIcon">
+          <img src="CSS/images/icon-star.svg" alt="RatingStar" />
+        </div>
+        <div class="ratingContent">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="ratingNumber">
+          <button id="rate1" class="rating-btn" aria-label="rate 1 star">1</button>
+          <button id="rate2" class="rating-btn" aria-label="rate 2 star">2</button>
+          <button id="rate3" class="rating-btn" aria-label="rate 3 star">3</button>
+          <button id="rate4" class="rating-btn" aria-label="rate 4 star">4</button>
+          <button id="rate5" class="rating-btn" aria-label="rate 5 star">5</button>
+        </div>
+
+        <div class="ratingSubmit" id="subBtn">
+          <h2>submit</h2>
+        </div>
+      </div>
+    </main>
+    <script
+    src="JS/script.js"></script>
+  </body>
 </html>
