@@ -22,7 +22,6 @@ input.forEach((button) => {
 
       popUpBox.style.display = "block";
       rateCard.style.display = "none";
-
     });
 
     rateNum.innerHTML = button.value;
