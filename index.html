@@ -11,26 +11,27 @@
     <main>
       <div class="popUp" id="popUpThanks">
         <div class="close" id="closeIcon">
-            <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            style="fill: rgb(255, 255, 255);"
+            style="fill: rgb(255, 255, 255)"
           >
             <path
               d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
             ></path>
           </svg>
         </div>
-     
+
         <div class="popUpIcon">
-     
           <img src="CSS/images/illustration-thank-you.svg" alt="" />
         </div>
 
         <div class="popUpGreeting">
-          <h2 class="greeting">You've selected <span id="rateRange">0</span> out of 5</h2>
+          <h2 class="greeting">
+            You've selected <span id="rateNum">0</span> out of 5
+          </h2>
         </div>
         <div class="thankyouContent">
           <h1>Thank you!</h1>
@@ -52,20 +53,26 @@
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <div class="ratingNumber">
-          <button id="rate1" class="rating-btn" aria-label="rate 1 star">1</button>
-          <button id="rate2" class="rating-btn" aria-label="rate 2 star">2</button>
-          <button id="rate3" class="rating-btn" aria-label="rate 3 star">3</button>
-          <button id="rate4" class="rating-btn" aria-label="rate 4 star">4</button>
-          <button id="rate5" class="rating-btn" aria-label="rate 5 star">5</button>
-        </div>
-
-        <div class="ratingSubmit" id="subBtn">
-          <h2>submit</h2>
-        </div>
+        <form action="#" class="numbers" id="form">
+          <label for="1">
+            <input type="text" name="one" id="rate1" value="1" readonly />
+          </label>
+          <label for="2">
+            <input type="text" name="two" id="rate2" value="2" readonly />
+          </label>
+          <label for="3">
+            <input type="text" name="three" id="rate3" value="3" readonly />
+          </label>
+          <label for="4">
+            <input type="text" name="four" id="rate4" value="4" readonly />
+          </label>
+          <label for="5">
+            <input type="text" name="five" id="rate5" value="5" readonly />
+          </label>
+          <button class="ratingSubmit" id="subBtn">Submit</button>
+        </form>
       </div>
     </main>
-    <script
-    src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
