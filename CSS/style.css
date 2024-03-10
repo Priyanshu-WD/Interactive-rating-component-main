@@ -156,7 +156,7 @@ input:hover {
 }
 
 /*Media Query*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   main {
     width: 100%;
     height: 100%;
@@ -164,23 +164,23 @@ input:hover {
 
   .rating-card {
     width: 90%;
-    padding: 2rem 1.3rem;
+    padding: 1rem;
   }
 
-  .popUp {
-    width: 90%;
+  .ratingSubmit {
+    padding: 0.7rem 1rem;
   }
+ 
 
   .numbers {
-    width: 90%;
-    padding-right: 0;
-    gap: 0.35rem;
+    width: 100%;
+    padding-right: 0rem;
   }
 
   input {
-    width: 1.781rem;
-    height: 1.781rem;
-    font-size: 0.76rem;
+    width: 6vw;
+    height: 6vw;
+    font-size: 2vw;
   }
 
   h1 {
@@ -190,6 +190,11 @@ input:hover {
   p {
     font-size: 0.8rem;
     line-height: 1rem;
+  }
+
+  .ratingSubmit{
+    padding: 1vw;
+    font-size: 3vw;
   }
 }
 
